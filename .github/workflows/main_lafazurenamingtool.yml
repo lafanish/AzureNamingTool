@@ -8,9 +8,7 @@ on:
     branches:
       - main
   workflow_dispatch:
-defaults:
-  run:
-    working-directory: src
+
 jobs:
   build:
     runs-on: windows-latest
@@ -55,5 +53,5 @@ jobs:
         with:
           app-name: 'LAFAzureNamingTool'
           slot-name: 'Production'
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_CDAABB30B9D54CB2B8E6AAD5479701EF }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_285DC323F7BD42DFB9E589D07541E628 }}
           package: .
