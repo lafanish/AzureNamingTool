@@ -2,7 +2,7 @@
 # Docs for the Azure Web Apps Deploy action: https://github.com/Azure/webapps-deploy
 # More GitHub Actions for Azure: https://github.com/Azure/actions
 
-name: Build and deploy ASP.Net Core app to Azure Web App - LAFAzureNamingTool2
+name: Build and deploy ASP.Net Core app to Azure Web App - LAFAzureNamingTool3
 
 on:
   push:
@@ -54,7 +54,7 @@ jobs:
         id: deploy-to-webapp
         uses: azure/webapps-deploy@v2
         with:
-          app-name: 'LAFAzureNamingTool2'
+          app-name: 'LAFAzureNamingTool3'
           slot-name: 'Production'
           publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_30D08816E400419D91519EFDBE3A393C }}
           package: .
